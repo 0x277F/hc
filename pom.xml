@@ -26,6 +26,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>hc-api</module>
+        <module>hc-core</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -56,6 +57,12 @@
                 <artifactId>junit</artifactId>
                 <version>4.12</version>
                 <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.ow2.asm</groupId>
+                <artifactId>asm-all</artifactId>
+                <version>5.0.3</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

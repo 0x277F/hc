@@ -36,12 +36,12 @@ public interface TypeTransformer {
     /**
      * Construct a type transformer based on a rule.
      *
-     * @param input the input to recognize
      * @param output the output to produce
+     * @param input the input to recognize
      * @return a new TypeTransformer
      */
     @Nonnull
-    static TypeTransformer of(@Nonnull String input, @Nonnull String output) {
+    static TypeTransformer of(@Nonnull String output, @Nonnull String input) {
         return i -> {
             if (i.equals(input)) {
                 return output;
